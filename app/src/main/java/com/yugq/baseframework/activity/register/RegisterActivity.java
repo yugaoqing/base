@@ -1,0 +1,32 @@
+package com.yugq.baseframework.activity.register;
+
+import com.yugq.baseframework.BaseActivity;
+import com.yugq.baseframework.R;
+
+/**
+ * 
+ * @description 注册jiem
+ * @author yugq
+ * @data 2016-1-26
+ * @modified 修改者，修改日期，修改内容
+ */
+public class RegisterActivity extends BaseActivity {
+
+	@Override
+	protected int initLayoutId() {
+		return R.layout.activity_splash;
+	}
+
+	@Override
+	protected void initTitle() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	protected void initView() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/light_toolbar"
+        android:fitsSystemWindows="true" >
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <Button
+                android:id="@+id/btn_top_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/app_name" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@id/tv_top_title"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_top_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:minWidth="40dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp" >
+
+                    <Button
+                        android:id="@+id/btn_top_right2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:minWidth="40dp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_top_title_choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:scaleType="fitCenter"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>
