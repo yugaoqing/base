@@ -4,5 +4,6 @@
     <string name="app_name">baseFramework</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="ignore">跳过</string>
 
 </resources>

@@ -1,7 +1,5 @@
 package com.yugq.baseframework.view;
 
-import com.yugq.baseframework.R;
-
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
@@ -11,10 +9,12 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.yugq.baseframework.R;
+
 /**
  * 自定义titlebar
  * 
- * @author wangfubin
+ * @author yugq
  * 
  */
 public class TitleView extends FrameLayout {
@@ -25,7 +25,7 @@ public class TitleView extends FrameLayout {
 
 	public TitleView(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		LayoutInflater.from(context).inflate(R.layout.toolbar, this);
+		LayoutInflater.from(context).inflate(R.layout.include_titlebar, this);
 		btn_top_back = (Button) findViewById(R.id.btn_top_back);
 		tv_top_title = (TextView) findViewById(R.id.tv_top_title);
 		btn_top_right = (Button) findViewById(R.id.btn_top_right);

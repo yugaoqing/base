@@ -8,9 +8,6 @@ public class TextUtils {
 	 * @return
 	 */
 	public static boolean StrIsNotNull(String str) {
-		if (str == null || str.equals("") || str.equals("null") || str.length() == 0) {
-			return true;
-		}
-		return false;
+		return str == null || str.equals("") || str.equals("null");
 	}
 }

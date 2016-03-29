@@ -1,6 +1,6 @@
 package com.yugq.baseframework.activity.register;
 
-import com.yugq.baseframework.BaseActivity;
+import com.yugq.baseframework.common.BaseActivity;
 import com.yugq.baseframework.R;
 
 /**
