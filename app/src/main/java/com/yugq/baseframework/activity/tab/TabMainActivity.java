@@ -1,14 +1,11 @@
 package com.yugq.baseframework.activity.tab;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.yugq.baseframework.R;
@@ -16,7 +13,6 @@ import com.yugq.baseframework.activity.tab.frgment.MainFragment;
 import com.yugq.baseframework.activity.tab.frgment.MainFragment2;
 import com.yugq.baseframework.activity.tab.frgment.MainFragment3;
 import com.yugq.baseframework.common.BaseActivity;
-import com.yugq.baseframework.view.TitleView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,11 +28,6 @@ import java.util.Map;
  */
 public class TabMainActivity extends BaseActivity implements View.OnClickListener{
 
-	private Toolbar toolbar;
-	private boolean isLight;
-	private TextView toolbar_title;
-	private TitleView titleView;
-	private LinearLayout tab_bar;
 	private TextView menu_0;
 	private TextView menu_1;
 	private TextView menu_2;
@@ -44,6 +35,7 @@ public class TabMainActivity extends BaseActivity implements View.OnClickListene
 	private Map<Integer, Fragment> pagers;
 	private ViewPager viewpager;
 	private FragmentPagerAdapter mAdapter;
+
 	@Override
 	protected int initLayoutId() {
 		return R.layout.activity_main;
@@ -51,15 +43,13 @@ public class TabMainActivity extends BaseActivity implements View.OnClickListene
 
 	@Override
 	protected void initTitle() {
-		titleView.setTitle("这个是标题");
-		titleView.setvisible(View.VISIBLE,View.VISIBLE,View.VISIBLE);
+
 	}
 
 	@Override
 	protected void initView() {
-		titleView = (TitleView) findViewById(R.id.title_bar);
+
 		viewpager = (ViewPager) findViewById(R.id.viewpager);
-		tab_bar = (LinearLayout) findViewById(R.id.tab_bar);
 		menu_0 = (TextView) findViewById(R.id.menu_0);
 		menu_1 = (TextView) findViewById(R.id.menu_1);
 		menu_2 = (TextView) findViewById(R.id.menu_2);
@@ -97,7 +87,6 @@ public class TabMainActivity extends BaseActivity implements View.OnClickListene
 	@Override
 	protected void initClick() {
 		super.initClick();
-		titleView.setOnClickListener(this);
 		menu_0.setOnClickListener(this);
 		menu_1.setOnClickListener(this);
 		menu_2.setOnClickListener(this);
@@ -152,15 +141,15 @@ public class TabMainActivity extends BaseActivity implements View.OnClickListene
 		public void onPageSelected(int position) {
 			switch (position) {
 				case 0:
-					setStatusBarColor(Color.BLUE);
+					setStatusBarColor(R.color.clicked_tv_textcolor);
 					setNavMenuChecked(0);
 					break;
 				case 1:
-					setStatusBarColor(Color.BLUE);
+					setStatusBarColor(R.color.clicked_tv_textcolor);
 					setNavMenuChecked(1);
 					break;
 				case 2:
-					setStatusBarColor(Color.YELLOW);
+					setStatusBarColor(R.color.clicked_tv_textcolor);
 					setNavMenuChecked(2);
 					break;
 				default:

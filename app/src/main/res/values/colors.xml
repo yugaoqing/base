@@ -19,4 +19,5 @@
     <color name="light_menu_listview_textcolor">#FF000000</color>
     <color name="dark_menu_listview_textcolor">@android:color/darker_gray</color>
     <color name="clicked_tv_textcolor">@android:color/darker_gray</color>
+
 </resources>

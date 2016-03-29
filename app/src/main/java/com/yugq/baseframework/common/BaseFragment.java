@@ -36,6 +36,7 @@ public abstract class BaseFragment extends Fragment {
 	}
 
 
+
 	/**
 	 * 设置baseview
 	 *
@@ -78,9 +79,9 @@ public abstract class BaseFragment extends Fragment {
 	@Override
 	public void onResume() {
 		super.onResume();
-//		if (getUserVisibleHint()) {
-//			initData();
-//		}
+		if (getUserVisibleHint()) {
+			initData();
+		}
 	}
 
 	@Override
