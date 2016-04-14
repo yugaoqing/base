@@ -1,4 +1,4 @@
-package com.yugq.baseframework.entity;
+package com.yugq.baseframework.activity.tab.entity;
 
 import java.util.List;
 

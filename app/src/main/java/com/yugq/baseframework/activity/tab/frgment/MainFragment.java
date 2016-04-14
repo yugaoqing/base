@@ -11,7 +11,7 @@ import com.yugq.baseframework.R;
 import com.yugq.baseframework.common.BaseFragment;
 import com.yugq.baseframework.common.EasyBaseAdapter;
 import com.yugq.baseframework.common.EasyViewHolder;
-import com.yugq.baseframework.entity.SampleInfo;
+import com.yugq.baseframework.activity.tab.entity.SampleInfo;
 import com.yugq.baseframework.utils.GsonImpl;
 import com.yugq.baseframework.view.TitleView;
 
@@ -85,9 +85,7 @@ public class MainFragment extends BaseFragment {
 
     @Override
     protected void initData() {
-
         handler.sendEmptyMessage(0);
-
     }
 
     class MyAdapter extends EasyBaseAdapter<SampleInfo.LinksEntity> {
